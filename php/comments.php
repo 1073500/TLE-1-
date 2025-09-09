@@ -3,8 +3,7 @@
 //eerst comment zonder login, daarna met
 
 // 1. connectie met database
-require_once 'includes/database.php';
-
+//require_once 'includes/database.php';
 ?>
 
 <!doctype html>
