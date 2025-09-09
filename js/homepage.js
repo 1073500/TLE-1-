@@ -1,4 +1,3 @@
-window.addEventListener('load', init);
 
 let calender
 let thegram
