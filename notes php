@@ -1,0 +1,24 @@
+get, post, postback
+verbinding maken van database vanuit php
+sql queries: select insert delete join join
+databases en relaties ( ERD, one to many)
+forms, security, hiddenfield
+authorisatie(login)
+sessions, cookies
+
+
+
+edit pagina pseudocode
+
+is het id in de url aanvraagbaar? zo ja
+id opvragen van product
+zo nee redirect naar homepage
+
+get data from db
+check data from the page with the data from the database
+if data is different from data in db
+make post request to change the data into the input value
+mysql queries UPDATE and change the data
+return and go back to the page with updated data
+
+$db = mysqli_connect
