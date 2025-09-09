@@ -1,8 +1,8 @@
-
 let calender
 let thegram
 let poweroff
 
+init()
 function init() {
     makeContents()
 }
