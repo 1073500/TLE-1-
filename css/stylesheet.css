@@ -52,6 +52,7 @@ body {
     justify-content: end;
 }
 
+
 .navbar {
     display: flex;
     justify-content: space-evenly;
@@ -83,4 +84,19 @@ body {
     font-size: xxx-large;
     display: flex;
     justify-content: center;
+}
+
+.reviewBlock {
+    display: flex;
+    color: antiquewhite;
+    text-align: justify-all;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
+    word-wrap: break-word;
+    margin: 30px 80vh;
+    padding: 30px 20px;
+    background-color: #151515;
+    border: #DF5F2C 2px solid;
+    border-radius: 5px;
 }
