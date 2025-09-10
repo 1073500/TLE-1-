@@ -9,9 +9,10 @@ function showTime(){
     let currentTime = hours + ":" + minutes +":" + seconds
 
 
-    // document.getElementById('clock') = currentTime
-// console.log(time)
+    document.getElementById('clock').innerText = currentTime
+
 }
+
 
 function showDate(){
     let time = new Date()
@@ -22,18 +23,22 @@ function showDate(){
     let month = time.getMonth()
     let date = time.getDate()
 
+    let currentdate = date + " " + months[month] + " " + year
     // console.log(month)
     let datediv = document.getElementById('date')
 
-    for (let i = 0; i < months.length + 1; i++) {
-        if (i === month){
-            let currentMonth = months[i]
-            // console.log(currentMonth)
-            datediv.innerHTML(currentMonth)
-            // console.log(datediv)
-        }
+    datediv.innerText = currentdate
 
-    }
+
+    // for (let i = 0; i < months.length + 1; i++) {
+    //     if (i === month){
+    //         let currentMonth = months[i]
+    //         // console.log(currentMonth)
+    //         datediv.innerHTML = currentMonth
+    //         // console.log(datediv)
+    //     }
+    //
+    // }
 }
 showDate()
 showTime()
