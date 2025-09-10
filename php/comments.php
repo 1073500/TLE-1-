@@ -15,7 +15,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The gram</title>
 </head>
+<nav>
+
+</nav>
 <body>
 
+<section>
+    <div id="shortlinks">
+
+    </div>
+
+</section>
+<section>
+    <div id="reclame"></div>
+</section>
 </body>
 </html>

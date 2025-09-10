@@ -51,3 +51,36 @@ body {
     display: flex;
     justify-content: end;
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    flex-direction: row;
+    width: 1600px;
+
+
+
+}
+
+.navimg {
+    scale: 2;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#clock {
+ font-size: xxx-large;
+    display: flex;
+    justify-content: center;
+}
+
+#date {
+    font-size: xxx-large;
+    display: flex;
+    justify-content: center;
+}
