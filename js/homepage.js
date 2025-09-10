@@ -1,26 +1,5 @@
-// let section1 = document.getElementsByClassName('1')
-//
-//
-//
-// function makeContents() {
-//     let calender = document.createElement('img')
-//     let thegram = document.createElement('a')
-//     let poweroff = document.createElement('img')
-//
-//     calender.src = "images/catwet.png"
-//
-//
-//
-//     let calenderdiv = document.createElement('div')
-//     let thegramdiv = document.createElement('div')
-//     let poweroffdiv = document.createElement('div')
-//
-//
-//     section1.append(calenderdiv, thegramdiv, poweroffdiv)
-//     calenderdiv.appendChild(calender)
-// }
-// makeContents()
-
+//timeout zorgt voor 1 sec
+setInterval(() => showTime,1000)
 function showTime(){
     let time = new Date()
     let hours = time.getHours()
@@ -29,12 +8,32 @@ function showTime(){
 
     let currentTime = hours + ":" + minutes +":" + seconds
 
-    document.getElementsByClassName(
-        'time'
-    )
-        intime.innerhtml(currentTime)
 
-
+    // document.getElementById('clock') = currentTime
+// console.log(time)
 }
 
+function showDate(){
+    let time = new Date()
+
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ]
+
+    let year = time.getFullYear()
+    let month = time.getMonth()
+    let date = time.getDate()
+
+    // console.log(month)
+    let datediv = document.getElementById('date')
+
+    for (let i = 0; i < months.length + 1; i++) {
+        if (i === month){
+            let currentMonth = months[i]
+            // console.log(currentMonth)
+            datediv.innerHTML(currentMonth)
+            // console.log(datediv)
+        }
+
+    }
+}
+showDate()
 showTime()
